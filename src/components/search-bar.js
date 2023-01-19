@@ -5,7 +5,7 @@ import { Field, reduxForm } from 'redux-form';
 class SearchBar extends Component {
     handleSubmitForm = function({query}) {
         this.props.onSubmit(query);
-      }
+    }
 
     renderInput(field) {
         return <input type="text" placeholder='Search DailySmarty' {...field.input} />

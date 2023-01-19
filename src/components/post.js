@@ -5,23 +5,17 @@ class Post extends Component {
         let topics = this.props.associated_topics.map((topic, index) => {
             return <span className="post-topic" key={index}>{topic}</span>
         })
-    
         return topics;
     }
 
     render() {
         return (
-            <li>
-                <div className="recent-posts">
-
-                    <div className="recent-post-title">
-                        {this.props.title}
-                    </div>
-
-                    <div className="recent-post-topics">
-                        {this.renderTopics()}
-                    </div>
-                    
+            <li className="recent-post">
+                <div className="recent-post__title">
+                    {this.props.title}
+                </div>
+                <div className="recent-post__topics">
+                    {this.renderTopics()}
                 </div>
             </li>
         );
