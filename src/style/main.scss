@@ -16,8 +16,9 @@ body {
 }
 
 .app-wrapper {
-    justify-content: center;
     display: grid;
+    justify-content: center;
+    
 
     .home {
         height: 100vh;
@@ -26,12 +27,15 @@ body {
         display: grid;
         align-content: space-around;
         justify-items: center;
-        grid-template-rows: 1fr 1fr 1fr;
-        
+        // grid-template-rows: 1fr 1fr 1fr;
         
     }
 }
 
+$color-gray-one: #666666;
+$color-gray-two: #b3b3b3;
+
+@import './search-bar.scss';
 
 
 
