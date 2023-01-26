@@ -1,34 +1,37 @@
-.logo-main {
-    img {
-        width: 110px;
-        height: 110px;
-        align-items: center;
-        justify-items: center;
-    }
-}
-
-.post-topic {
-    margin: 0 4px;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
 .app-wrapper {
     display: grid;
     justify-content: center;
     
-
     .home {
         height: 100vh;
         width: 66vw;
     
         display: grid;
         align-content: space-around;
-        justify-items: center;
+        align-items: stretch;
         // grid-template-rows: 1fr 1fr 1fr;
+
+        .logo-main, .recent-posts {
+            display: grid;
+            justify-items: center;
+
+            // img {
+            //     width: 110px;
+            //     height: 110px;
+            //     align-items: center;
+            //     // justify-items: center;
+                
+            // }
+        }
         
+    }
+
+    .post-topic {
+        margin: 0 4px;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
     }
 }
 
