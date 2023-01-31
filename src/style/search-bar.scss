@@ -15,9 +15,6 @@
             // border: none;
             border-radius: 5px;
     
-            height: 118px;
-            font-size: 40px;
-    
             transition: all .2s ease-in-out;
     
             &::placeholder {
@@ -38,5 +35,25 @@
             font-size: 13px;
             color: $color-gray-two;
         }
+    }
+}
+
+.search-bar__home {
+    align-content: center;
+    justify-items: center;
+
+    input {
+        height: 118px;
+        font-size: 40px;
+    }
+}
+
+.search-bar__results {
+    align-content: start;
+    justify-items: center;
+    
+    input {
+        height: 22px;
+        font-size: 36px;
     }
 }
