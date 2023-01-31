@@ -48,15 +48,15 @@ class Post extends Component {
         } else if (this.props.type == 'result') {
             return (
                 <li className="result-post">
-                    <div className="result-post__topics">
+                    <div className="result-post__topics"
+                        onMouseEnter={() => this.setState({ height: 70 })}
+                        onMouseLeave={() => this.setState({ height: 0 })}
+                    >
                         {this.renderTopics()}
                     </div>
     
                     <div className="result-post__title">
-                        <a href={this.props.url_for_post}
-                            onMouseEnter={() => this.setState({ height: 70 })}
-                            onMouseLeave={() => this.setState({ height: 0 })}
-                        >
+                        <a href={this.props.url_for_post}>
                             {this.props.title}
                         </a>
                     </div>
