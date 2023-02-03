@@ -61,24 +61,24 @@ class Post extends Component {
             return (
                 <li className="recent-post">
                     <div className="recent-post__title">
-                        {this.props.title}
+                        <a href={this.props.url_for_post}>{this.props.title}</a>
                     </div>
                     <div className="recent-post__topics">
                         {this.renderTopics()}
                     </div>
                 </li>
             )
-        } else if (this.props.type == 'linkult') {
+        } else if (this.props.type == 'result') {
             return (
-                <li className="linkult-post">
-                    <div className="linkult-post__topics"
-                        onMouseEnter={() => this.setState({ height: 70 })}
-                        onMouseLeave={() => this.setState({ height: 0 })}
-                    >
+                <li className="result-post" 
+                    onMouseEnter={() => this.setState({ height: 70 })}
+                    onMouseLeave={() => this.setState({ height: 0 })}
+                >
+                    <div className="result-post__topics">
                         {this.renderTopics()}
                     </div>
     
-                    <div className="linkult-post__title">
+                    <div className="result-post__title">
                         <a href={this.props.url_for_post}>
                             {this.props.title}
                         </a>
@@ -88,7 +88,7 @@ class Post extends Component {
                         duration={500}
                         height={this.state.height}
                     >
-                        <div className="linkult-post__links">
+                        <div className="result-post__links">
                             {this.renderLinks()}
                         </div>
                     </AnimateHeight>

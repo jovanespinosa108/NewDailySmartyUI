@@ -9,6 +9,9 @@
 }
 
 .results-posts {
+    display: grid;
+    grid-row-gap: 21px;
+
     .results-posts__wrapper {
         .results-posts__posts {
             display: grid;
@@ -31,16 +34,16 @@
     }
 
     .result-post__title a {
-        color: $color-blue-one;
+        color: $color-gray-one;
         font-size: 18px;
         line-height: 22px;
     }
 
     .result-post__links {
         display: flex;
-        color: $color-gray-one;
-        font-size: 18px;
-        line-height: 22px;
+        // color: $color-gray-one;
+        // font-size: 18px;
+        // line-height: 22px;
     }
 }
 
